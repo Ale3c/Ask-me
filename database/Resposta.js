@@ -4,7 +4,7 @@ const Pergunta = require('./Pergunta')
 
 const Resposta = connection.define('respostas',{
     corpo: {type: Sequelize.TEXT, allowNull: false},
-    perfuntaId: {type: Sequelize.INTEGER, allowNull: false}
+    perguntaId: {type: Sequelize.INTEGER, allowNull: false}
 })
 
 Resposta.sync({force: false})
